@@ -10,6 +10,5 @@ function returnWikidata(){
   req.open('GET','https://en.wikipedia.org/w/api.php?action=query&origin=*&list=search&srsearch='+search+'&format=json', false)
   req.send(null)
   document.getElementById('wikiresp').textContent = req.responseText
-  /*event.preventDefault();*/
 
 }
